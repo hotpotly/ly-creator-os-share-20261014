@@ -1,0 +1,30 @@
+.DS_Store
+/.claude/settings.local.json
+/.share-output/
+/.worktrees/
+/node_modules/
+/tmp/
+/app/tmp/
+
+# 本机环境与用户数据
+.env
+.env.*
+!.env.example
+**/local.properties
+**/.flutter-plugins-dependencies
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+
+# 签名和私钥
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+
+# 分享版独立开发数据
+/app/.local-data/

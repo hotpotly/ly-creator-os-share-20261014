@@ -1,0 +1,69 @@
+@import './tokens.foundation.css';
+@import './tokens.identity.css';
+@import './tokens.warm.css';
+@import './tokens.feishu.css';
+
+:root {
+  --travel-business-soft: color-mix(in srgb, var(--project-3-soft) 40%, var(--surface));
+  --travel-home-soft: #e6f4fe;
+  --travel-business: var(--project-3);
+  --travel-home: #9bcff3;
+  --travel-business-surface: color-mix(in srgb, var(--project-3-soft) 18%, var(--surface));
+  --travel-home-surface: #f4faff;
+  --travel-business-text: var(--project-3-text);
+  --travel-home-text: #365d78;
+  --travel-rest: var(--project-6);
+  --travel-rest-soft: color-mix(in srgb, var(--project-6-soft) 40%, var(--surface));
+  --travel-rest-surface: color-mix(in srgb, var(--project-6-soft) 18%, var(--surface));
+  --travel-rest-text: var(--project-6-text);
+}
+
+:root[data-theme='dark'] {
+  --travel-home: #90c8ee;
+  --travel-home-soft: #213642;
+  --travel-home-surface: #192730;
+  --travel-home-text: #bce1fa;
+}
+
+:root {
+  --content-type-digital-soft: var(--project-2-soft);
+  --content-type-digital-text: var(--project-2-text);
+  --content-type-commercial-soft: var(--project-4-soft);
+  --content-type-commercial-text: var(--project-4-text);
+  --content-type-system-soft: var(--project-6-soft);
+  --content-type-system-text: var(--project-6-text);
+  --content-type-ai-soft: var(--project-3-soft);
+  --content-type-ai-text: var(--project-3-text);
+  --content-type-quick-soft: var(--project-7-soft);
+  --content-type-quick-text: var(--project-7-text);
+  --content-type-custom-soft: var(--raised);
+  --content-type-custom-text: var(--text-supporting);
+}
+
+/* Month identity is stable across years; unrelated to overdue or calendar travel state. */
+:root {
+  --month-1-soft: var(--project-1-soft);
+  --month-1-text: var(--project-1-text);
+  --month-2-soft: var(--project-2-soft);
+  --month-2-text: var(--project-2-text);
+  --month-3-soft: var(--project-3-soft);
+  --month-3-text: var(--project-3-text);
+  --month-4-soft: var(--project-4-soft);
+  --month-4-text: var(--project-4-text);
+  --month-5-soft: var(--project-5-soft);
+  --month-5-text: var(--project-5-text);
+  --month-6-soft: var(--project-6-soft);
+  --month-6-text: var(--project-6-text);
+  --month-7-soft: var(--project-7-soft);
+  --month-7-text: var(--project-7-text);
+  --month-8-soft: var(--project-8-soft);
+  --month-8-text: var(--project-8-text);
+  --month-9-soft: var(--project-9-soft);
+  --month-9-text: var(--project-9-text);
+  --month-10-soft: var(--project-10-soft);
+  --month-10-text: var(--project-10-text);
+  --month-11-soft: var(--project-11-soft);
+  --month-11-text: var(--project-11-text);
+  --month-12-soft: var(--project-12-soft);
+  --month-12-text: var(--project-12-text);
+}

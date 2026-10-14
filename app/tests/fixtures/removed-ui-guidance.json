@@ -1,0 +1,186 @@
+[
+  {
+    "file": "features/script/shared/ReferencePickerPopover.tsx",
+    "text": "选择后会成为可核对的结构化引用"
+  },
+  {
+    "file": "components/DraftComparisonWorkspace.tsx",
+    "text": "高亮、下划线、删除线、旗标或备注"
+  },
+  {
+    "file": "components/DraftComparisonWorkspace.tsx",
+    "text": "使用左右候选和轮次继续修改"
+  },
+  {
+    "file": "components/DraftComparisonWorkspace.tsx",
+    "text": "拖到顶部组号也可以"
+  },
+  {
+    "file": "components/DraftComparisonWorkspace.tsx",
+    "text": "在当前文案留下可备注缺口"
+  },
+  {
+    "file": "components/DraftComparisonWorkspace.tsx",
+    "text": "与Claude、Codex或候选一起综合"
+  },
+  {
+    "file": "components/TopicManagementPage.tsx",
+    "text": "标记这个选题还需要补充真实使用体验"
+  },
+  {
+    "file": "components/TopicManagementPage.tsx",
+    "text": "只看仍需补充真实体验的选题"
+  },
+  {
+    "file": "components/TopicManagementPage.tsx",
+    "text": "只看重要程度大于0的选题"
+  },
+  {
+    "file": "components/BusinessModule.tsx",
+    "text": "先填最常看的金额；接单平台与内容发布平台分开管理。"
+  },
+  {
+    "file": "components/BusinessModule.tsx",
+    "text": "返点和发票状态独立选择，相关细节按需展开。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "提出要求，核对来源后再保存"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "先把无序的准备材料扔进来；生成时再选择哪些参与。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "文件和文件夹都可多选或直接拖入；点击后优先打开原始位置。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "除了灵感库内容，也可以直接拖入实拍、音频、参数表和资料文件夹。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "两边各出完整一版，完成后再逐项挑选。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "字幕与封面在后台运行；结果自动回到当前项目"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "直接进入需要的工作方式；工作台仍会记住上次使用的AI数量、模型和布局。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "把文件直接拖到这张卡片任意位置即可导入；也可以关联原文件持续同步。"
+  },
+  {
+    "file": "components/ProjectDetailPage.tsx",
+    "text": "选择一份外部稿进入工作台整理"
+  },
+  {
+    "file": "components/ProjectOverview.tsx",
+    "text": "保存为新版本，原描述仍保留。"
+  },
+  {
+    "file": "components/ProjectOverview.tsx",
+    "text": "只更新归属与推荐，不替换现有内容。"
+  },
+  {
+    "file": "components/IncomeLedgerPages.tsx",
+    "text": "把商单和其他收入放到同一套实际净收入、预计净收入与回款口径中。"
+  },
+  {
+    "file": "components/IncomeLedgerPages.tsx",
+    "text": "按收益月份、收入日期或创建时间排序。"
+  },
+  {
+    "file": "components/IncomeLedgerPages.tsx",
+    "text": "记录顾问、课程讲座、内容授权、平台分成、发布会等非商单收入。"
+  },
+  {
+    "file": "components/WorkspacePages.tsx",
+    "text": "这是跨项目快捷入口；可以先从AI对话里筛选内容，其他制作结果进入选中的内容项目。"
+  },
+  {
+    "file": "components/WorkspacePages.tsx",
+    "text": "用同一套项目色查看月、周、日与列表，并把未排期行动拖入具体日期。"
+  },
+  {
+    "file": "components/WorkspacePages.tsx",
+    "text": "存量文案、封面风格、素材、模板和账号矩阵的统一入口。"
+  },
+  {
+    "file": "components/WorkspacePages.tsx",
+    "text": "预览只改变首页窗景；选“跟随”会按天气城市的大致当地时间切换日出、白天、夕阳和夜晚。"
+  },
+  {
+    "file": "components/WorkspacePages.tsx",
+    "text": "主页面一次只显示一类设置，其他分类从右侧小菜单切换。"
+  },
+  {
+    "file": "components/WorkspacePages.tsx",
+    "text": "打开Android App，选中自动发现的Mac，再核对一次数字即可连接。"
+  },
+  {
+    "file": "components/ScriptWorkbench.tsx",
+    "text": "选中文字后右键添加标记。"
+  },
+  {
+    "file": "components/ScheduleCard.tsx",
+    "text": "拖入日历安排，拖回这里取消日期"
+  },
+  {
+    "file": "components/ScheduleCard.tsx",
+    "text": "单击排期查看详情，双击直接打开项目。"
+  },
+  {
+    "file": "components/ClassificationDefinitionManager.tsx",
+    "text": "写清收录范围、不收什么、典型例子和容易混淆的边界，Codex会参考，最多2000字。"
+  },
+  {
+    "file": "components/ProjectPlatformPopover.tsx",
+    "text": "可选多个平台，圆点标记主平台。点选即保存。"
+  },
+  {
+    "file": "components/DistributionPage.tsx",
+    "text": "批次可以来自项目定稿，也可以直接粘贴文案或SRT字幕。"
+  },
+  {
+    "file": "components/ContentEnginePage.tsx",
+    "text": "只从Codex和Claude的正常对话文字中筛选AI内容；确认一次后直接进入选题管理。"
+  },
+  {
+    "file": "components/TaskResourcePicker.tsx",
+    "text": "主要参考会优先带入；其他资料与真实体验由你决定是否补充，推荐文风可一键移除。"
+  },
+  {
+    "file": "components/PrimaryReferencePanel.tsx",
+    "text": "可多选，生成时会带上这些来源和备注。"
+  },
+  {
+    "file": "components/PrimaryReferencePanel.tsx",
+    "text": "默认显示最外层资料，搜索可选择文件夹内的单个文件。"
+  },
+  {
+    "file": "components/BusinessLedgerPage.tsx",
+    "text": "管理各平台的回款、返点、返点发票和商务资料。"
+  },
+  {
+    "file": "components/BusinessLedgerPage.tsx",
+    "text": "粘贴合作文字或上传聊天截图，由Codex识别后再确认"
+  },
+  {
+    "file": "components/BusinessLedgerPage.tsx",
+    "text": "合同、返点发票、返点凭证和聊天截图统一拖入，系统自动分类。"
+  },
+  {
+    "file": "components/RecyclePage.tsx",
+    "text": "各处删除的内容都收到这里，可以恢复或永久删除。"
+  },
+  {
+    "file": "components/HomePage.tsx",
+    "text": "先处理需要你判断的内容，再推进今天的项目。"
+  }
+]

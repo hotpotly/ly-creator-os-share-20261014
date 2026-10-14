@@ -1,0 +1,38 @@
+:root {
+  --font: "SF Pro Text", "PingFang SC", Inter, system-ui, -apple-system, sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-mono: var(--mono);
+  /* Text roles shared by every page, theme and anchored/full editor. */
+  --text-body: 13px;
+  --text-control: 12px;
+  --text-label: 11px;
+  --text-caption: 11px;
+  --text-micro: 10px;
+  --leading-body: 1.6;
+  --leading-ui: 1.45;
+  --text-supporting: color-mix(in srgb, var(--secondary) 85%, var(--body));
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --icon-tile-size: 32px;
+  --icon-tile-glyph: 18px;
+  --project-identity-size: 72px;
+  --radius-control: 8px;
+  --radius-compact: 7px;
+  --radius-calendar-event: 4px;
+  --radius-inner: 10px;
+  --radius-surface: 12px;
+  --radius-pill: 999px;
+  --sidebar-width: 220px;
+  --workspace-tabbar-height: 40px;
+  --topbar-height: 56px;
+  --page-padding: 24px;
+  --duration-fast: 140ms;
+  --motion-duration-fast: 140ms;
+  --duration-standard: 190ms;
+  --motion-duration-celebration: 780ms;
+  --ease-standard: ease;
+}

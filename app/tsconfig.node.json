@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "types": ["node", "electron-vite/node", "vitest/globals"]
+  },
+  "include": [
+    "electron.vite.config.ts",
+    "vitest.config.ts",
+    "playwright.config.ts",
+    "src/main/**/*.ts",
+    "src/preload/**/*.ts",
+    "src/shared/**/*.ts",
+    "src/renderer/src/data/**/*.ts",
+    "src/renderer/src/features/script/current-document/current-script-adapter.ts",
+    "src/renderer/src/utils/appearance.ts",
+    "src/renderer/src/utils/layout.ts",
+    "src/renderer/src/utils/stage-date-range.ts",
+    "src/renderer/src/utils/project-overview-facts.ts",
+    "tests/unit/**/*.ts",
+    "tests/integration/**/*.ts"
+  ]
+}

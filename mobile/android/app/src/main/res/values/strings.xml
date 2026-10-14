@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LY快速记录</string>
+    <string name="widget_description">快速记录文字、录音、拍照并查看同步状态</string>
+    <string name="shortcut_text">记文字</string>
+    <string name="shortcut_audio">开始录音</string>
+    <string name="shortcut_camera">拍照记录</string>
+</resources>

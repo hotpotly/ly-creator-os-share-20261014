@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="mobile_camera" path="mobile-camera/" />
+    <cache-path name="shared_records" path="shared-records/" />
+    <cache-path name="diagnostics" path="diagnostics/" />
+    <cache-path name="updates" path="updates/" />
+</paths>

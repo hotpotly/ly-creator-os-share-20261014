@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="6dp"
+    android:background="#F5F1E9">
+
+    <TextView
+        android:id="@+id/widget_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="文字"
+        android:textColor="#37402F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_record"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="录音"
+        android:textColor="#37402F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_camera"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="#37402F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="待同步0"
+        android:textColor="#657653"
+        android:textSize="11sp" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+:root,
+:root[data-visual-style='warm'][data-theme='light'] {
+  color-scheme: light;
+  --page: #faf8f3;
+  --surface: #ffffff;
+  --raised: #f2eee6;
+  --data-cell: #f2eee6;
+  --data-cell-border: transparent;
+  --hover: #ece7dd;
+  --line: #d5cdbd;
+  --line-strong: #b8af9f;
+  --heading: #2c2c2c;
+  --body: #4a4a4a;
+  --secondary: #7a7068;
+  --muted: #a89f91;
+  --primary: #6b7c5a;
+  --primary-hover: #586849;
+  --on-primary: #ffffff;
+  --primary-soft: rgba(107, 124, 90, 0.13);
+  --growth-progress-fill: #b9caa8;
+  --growth-progress-track: #d8d4ca;
+  --focus-ring: rgba(107, 124, 90, 0.28);
+  --success: #4f7a55;
+  --success-soft: #eef5ec;
+  --warning: #9a621e;
+  --warning-soft: #fff4e5;
+  --danger: #b84b43;
+  --danger-soft: #fcedea;
+  --info: #486e86;
+  --info-soft: #eaf2f5;
+  --popover-shadow: 0 12px 32px rgba(67, 57, 44, 0.12);
+  --shadow-drag: 0 4px 12px rgba(67, 57, 44, 0.12);
+  --window-shadow: 0 18px 50px rgba(67, 57, 44, 0.16);
+  --modal-overlay: rgba(35, 31, 25, 0.25);
+  --drawer-overlay: rgba(32, 27, 21, 0.24);
+  --control-shadow: 0 1px 3px rgba(67, 57, 44, 0.08);
+  --sticky-shadow: 10px 0 14px -14px rgba(46, 39, 31, 0.55);
+  --pdf-page-bg: #ffffff;
+  --mark-index-bg: rgba(32, 35, 31, 0.78);
+  --mark-index-text: #ffffff;
+  --highlight-ink: #20231f;
+}
+
+:root[data-visual-style='warm'][data-theme='dark'],
+:root:not([data-visual-style])[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #151515;
+  --surface: #1d1d1d;
+  --raised: #252525;
+  --data-cell: #252525;
+  --data-cell-border: transparent;
+  --hover: #2d2d2d;
+  --line: #353535;
+  --line-strong: #4a4a4a;
+  --heading: #f2f2f2;
+  --body: #d1d1d1;
+  --secondary: #a0a0a0;
+  --muted: #737373;
+  --primary: #9aac8a;
+  --primary-hover: #afc09f;
+  --on-primary: #172014;
+  --primary-soft: rgba(154, 172, 138, 0.14);
+  --growth-progress-fill: #a9bea0;
+  --growth-progress-track: #454943;
+  --focus-ring: rgba(154, 172, 138, 0.3);
+  --success: #82c68b;
+  --success-soft: rgba(114, 183, 124, 0.14);
+  --warning: #d7a657;
+  --warning-soft: rgba(215, 166, 87, 0.14);
+  --danger: #e07a73;
+  --danger-soft: rgba(224, 122, 115, 0.14);
+  --info: #7fb2cf;
+  --info-soft: rgba(127, 178, 207, 0.14);
+  --popover-shadow: 0 16px 36px rgba(0, 0, 0, 0.34);
+  --shadow-drag: 0 4px 12px rgba(0, 0, 0, 0.34);
+  --window-shadow: 0 22px 60px rgba(0, 0, 0, 0.48);
+  --modal-overlay: rgba(0, 0, 0, 0.58);
+  --drawer-overlay: rgba(0, 0, 0, 0.56);
+  --control-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
+  --sticky-shadow: 10px 0 14px -14px rgba(0, 0, 0, 0.92);
+  --pdf-page-bg: #ffffff;
+  --mark-index-bg: rgba(242, 242, 242, 0.82);
+  --mark-index-text: #20231f;
+  --highlight-ink: #20231f;
+}

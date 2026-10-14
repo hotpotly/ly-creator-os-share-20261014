@@ -1,0 +1,26 @@
+# Git源码快照只包含可运行源码、测试、公共设计规范和使用文档。
+# 内部协作记录与历史产品资料仍保留在开发仓库，但不会进入git archive。
+/AGENTS.md export-ignore
+/CLAUDE.md export-ignore
+/HANDOFF_R5-R2-R3-R4_20260725.md export-ignore
+/prototypes/ export-ignore
+/reviews/ export-ignore
+/产品决策/ export-ignore
+/项目文档/ export-ignore
+/自媒体系统App_*.md export-ignore
+
+# 历史界面基线不作为分享材料，仅导出重新拍摄的演示说明图。
+/app/tests/visual/ export-ignore
+/visual-baseline/ export-ignore
+/设计系统与AI协作规范/01_* export-ignore
+/设计系统与AI协作规范/02_* export-ignore
+/设计系统与AI协作规范/03_* export-ignore
+/设计系统与AI协作规范/04_* export-ignore
+/设计系统与AI协作规范/05_* export-ignore
+/设计系统与AI协作规范/06_* export-ignore
+/设计系统与AI协作规范/07_* export-ignore
+/设计系统与AI协作规范/08_* export-ignore
+/设计系统与AI协作规范/README.md export-ignore
+/设计系统与AI协作规范/visual* export-ignore
+
+/设计系统与AI协作规范/审查记录/ export-ignore

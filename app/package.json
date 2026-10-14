@@ -1,0 +1,118 @@
+{
+  "name": "ly-creator-os",
+  "version": "0.1.0",
+  "private": true,
+  "author": "LY",
+  "description": "LY Creator OS macOS desktop application",
+  "type": "module",
+  "main": "./out/main/index.js",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "npm run typecheck && electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.e2e.json",
+    "lint": "eslint . --max-warnings=0",
+    "test": "ELECTRON_RUN_AS_NODE=1 electron node_modules/vitest/vitest.mjs run",
+    "test:e2e": "CREATOR_OS_TEST_BACKGROUND=1 playwright test",
+    "test:nas-mounted": "ELECTRON_RUN_AS_NODE=1 electron node_modules/vitest/vitest.mjs run tests/integration/nas-mounted-validation.test.ts",
+    "test:e2e:visible": "playwright test",
+    "test:stage1": "npm run typecheck && npm run lint && npm run test && npm run build && npm run visual:verify-v8 && npm run visual:capture && npm run visual:geometry && npm run visual:compare && npm run test:e2e && npm run package:mac && npm run package:smoke",
+    "test:stage2": "npm run typecheck && npm run lint && npm run test && npm run build && npm run visual:verify-v8 && npm run visual:capture && npm run visual:capture-stage2 && npm run visual:geometry && npm run visual:compare && npm run test:e2e && npm run package:mac && npm run package:smoke",
+    "test:stage3": "npm run typecheck && npm run lint && npm run test && npm run build && npm run visual:verify-v8 && npm run visual:capture && npm run visual:capture-stage3 && npm run visual:geometry && npm run visual:compare && npm run test:e2e && npm run package:mac && npm run package:smoke",
+    "postinstall": "electron-builder install-app-deps",
+    "package:bundle": "npm run build && electron-builder --mac dir",
+    "package:mac": "npm run package:bundle && node scripts/install-mac-app.mjs --remove-source",
+    "package:dmg": "npm run build && electron-builder --mac dmg",
+    "package:smoke": "node scripts/smoke-packaged.mjs && node scripts/verify-installed-mac-app.mjs",
+    "share:check": "node ../scripts/check-share-readiness.mjs",
+    "share:source": "node ../scripts/create-share-source.mjs",
+    "visual:verify-v8": "node ../scripts/verify-v8-baseline.mjs",
+    "visual:capture": "node scripts/capture-visuals.mjs",
+    "visual:capture-stage2": "node scripts/capture-stage2-visuals.mjs",
+    "visual:capture-stage3": "node scripts/capture-stage3-visuals.mjs",
+    "visual:capture-r5a": "node scripts/capture-r5a-visual.mjs",
+    "visual:capture-r5b": "node scripts/capture-r5b-visual.mjs",
+    "visual:capture-r5c": "node scripts/capture-r5c-visual.mjs",
+    "visual:capture-r5d": "node scripts/capture-r5d-visual.mjs",
+    "visual:capture-r2": "node scripts/capture-r2-visual.mjs",
+    "visual:capture-r3": "node scripts/capture-r3-visual.mjs",
+    "visual:capture-r4": "node scripts/capture-r4-visual.mjs",
+    "visual:geometry": "node scripts/check-geometry.mjs",
+    "visual:compare": "node scripts/compare-visuals.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "1.0.2",
+    "@tiptap/extension-highlight": "3.28.0",
+    "@tiptap/extension-underline": "^3.28.0",
+    "@tiptap/react": "3.28.0",
+    "@tiptap/starter-kit": "3.28.0",
+    "better-sqlite3": "12.11.1",
+    "chokidar": "5.0.0",
+    "drizzle-orm": "0.45.2",
+    "jszip": "3.10.1",
+    "lucide-react": "0.468.0",
+    "mammoth": "1.12.0",
+    "pdfjs-dist": "6.1.200",
+    "pinyin-pro": "3.28.2",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "zod": "4.4.3",
+    "zustand": "5.0.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "@playwright/test": "1.61.1",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "24.10.9",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "42.7.0",
+    "electron-builder": "26.15.3",
+    "electron-vite": "5.0.0",
+    "eslint": "9.39.2",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-refresh": "0.5.2",
+    "globals": "17.4.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.56.1",
+    "vite": "7.3.6",
+    "vitest": "4.1.10"
+  },
+  "build": {
+    "appId": "com.ly.creatoros",
+    "productName": "LY Creator OS",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*"
+    ],
+    "extraResources": [
+      { "from": "scripts/whisper_transcribe.py", "to": "whisper_transcribe.py" },
+      { "from": ".runtime/whisper-python", "to": "whisper-python" },
+      { "from": ".runtime/whisper-model-small", "to": "whisper-model-small" },
+      { "from": ".private-release/android", "to": "android" }
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+      "node_modules/@napi-rs/canvas*/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ]
+    }
+  }
+}

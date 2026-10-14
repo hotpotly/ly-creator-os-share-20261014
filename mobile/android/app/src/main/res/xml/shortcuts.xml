@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="capture_text"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_text">
+        <intent
+            android:action="ly.creator.capture.OPEN_TEXT"
+            android:targetPackage="com.ly.creatoros.ly_creator_capture"
+            android:targetClass="com.ly.creatoros.ly_creator_capture.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="capture_audio"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_audio">
+        <intent
+            android:action="ly.creator.capture.RECORD"
+            android:targetPackage="com.ly.creatoros.ly_creator_capture"
+            android:targetClass="com.ly.creatoros.ly_creator_capture.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="capture_camera"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_camera">
+        <intent
+            android:action="ly.creator.capture.TAKE_PHOTO"
+            android:targetPackage="com.ly.creatoros.ly_creator_capture"
+            android:targetClass="com.ly.creatoros.ly_creator_capture.MainActivity" />
+    </shortcut>
+</shortcuts>
